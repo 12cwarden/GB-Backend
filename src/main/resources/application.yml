@@ -1,0 +1,19 @@
+spring:
+  profiles:
+    active:
+      - "@profileActive@"
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - "*"
+server:
+  error:
+    include-stacktrace: never
+
+security:
+  basic:
+    enabled: true
+    authorize-mode: NONE
